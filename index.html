@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normateca Inteligente - Tu Aliado Regulatorio del DOF</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sombra-hero {
+            text-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+        }
+        /* Animación para aparición suave */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header y Navegación -->
+    <header class="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">
+                <i class="fas fa-balance-scale-right text-indigo-600"></i>
+                Normateca Inteligente
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#servicios" class="text-gray-600 hover:text-indigo-600 transition duration-300">Servicios</a>
+                <a href="#ideal-para" class="text-gray-600 hover:text-indigo-600 transition duration-300">Ideal Para</a>
+                <a href="#premium" class="text-gray-600 hover:text-indigo-600 transition duration-300">Premium</a>
+                <a href="#contacto" class="bg-indigo-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-indigo-700 transition duration-300">Comenzar Ahora</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#servicios" class="block py-2 px-4 text-sm text-gray-700 hover:bg-indigo-50">Servicios</a>
+            <a href="#ideal-para" class="block py-2 px-4 text-sm text-gray-700 hover:bg-indigo-50">Ideal Para</a>
+            <a href="#premium" class="block py-2 px-4 text-sm text-gray-700 hover:bg-indigo-50">Premium</a>
+            <a href="#contacto" class="block py-2 px-4 text-sm text-gray-700 hover:bg-indigo-50">Comenzar Ahora</a>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <main>
+        <section class="bg-cover bg-center h-[60vh] md:h-[80vh]" style="background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2832&auto=format&fit=crop');">
+            <div class="h-full bg-black bg-opacity-50 flex items-center">
+                <div class="container mx-auto px-6 text-center text-white">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight sombra-hero">Deja de buscar en el DOF. Empieza a entenderlo.</h1>
+                    <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto sombra-hero">Recibe resúmenes diarios, alertas personalizadas y análisis con IA sobre las regulaciones que impactan tu negocio. Todo, directamente en tu WhatsApp.</p>
+                    <a href="#contacto" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105 inline-block">Automatiza tu Cumplimiento Regulatorio</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Servicios -->
+        <section id="servicios" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">La Inteligencia que tu Negocio Necesita</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Desde el monitoreo diario hasta el análisis estratégico, tenemos la herramienta perfecta para cada necesidad regulatoria.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Servicio 1: Resumen Diario -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="text-4xl text-indigo-600 mb-4"><i class="fas fa-newspaper"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Resumen Diario por WhatsApp</h3>
+                        <p class="text-gray-600">Olvídate de revisar el Diario Oficial cada mañana. Recibe un resumen claro y conciso con las publicaciones de tus sectores de interés directamente en tu celular.</p>
+                    </div>
+                    <!-- Servicio 2: Alertas por Palabra Clave -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="text-4xl text-indigo-600 mb-4"><i class="fas fa-bell"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Alertas Inmediatas</h3>
+                        <p class="text-gray-600">Configura palabras clave críticas (ej. "licitación", una NOM específica) y recibe una notificación al instante si se publica algo relevante.</p>
+                    </div>
+                    <!-- Servicio 3: Agente Experto IA -->
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="text-4xl text-indigo-600 mb-4"><i class="fas fa-robot"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Agente Experto IA</h3>
+                        <p class="text-gray-600">¿Necesitas entender cómo te afecta una nueva ley? Pregúntale a nuestro agente. Analizará los documentos y te entregará un informe con implicaciones y pasos a seguir.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- NUEVA SECCIÓN: Ideal Para... -->
+        <section id="ideal-para" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Ideal para Profesionales y Empresas</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Si el cumplimiento normativo es clave en tu día a día, esta herramienta es para ti.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="fade-in">
+                        <div class="bg-white p-6 rounded-full shadow-md inline-block mb-4"><i class="fas fa-gavel text-3xl text-indigo-600"></i></div>
+                        <h3 class="font-bold text-lg">Abogados y Despachos</h3>
+                    </div>
+                    <div class="fade-in" style="animation-delay: 0.2s;">
+                        <div class="bg-white p-6 rounded-full shadow-md inline-block mb-4"><i class="fas fa-calculator text-3xl text-indigo-600"></i></div>
+                        <h3 class="font-bold text-lg">Contadores y Fiscalistas</h3>
+                    </div>
+                    <div class="fade-in" style="animation-delay: 0.4s;">
+                        <div class="bg-white p-6 rounded-full shadow-md inline-block mb-4"><i class="fas fa-clipboard-check text-3xl text-indigo-600"></i></div>
+                        <h3 class="font-bold text-lg">Oficiales de Cumplimiento</h3>
+                    </div>
+                    <div class="fade-in" style="animation-delay: 0.6s;">
+                        <div class="bg-white p-6 rounded-full shadow-md inline-block mb-4"><i class="fas fa-building text-3xl text-indigo-600"></i></div>
+                        <h3 class="font-bold text-lg">Empresarios y Directivos</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Funciones Premium -->
+        <section id="premium" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-indigo-600 font-semibold tracking-wider">HERRAMIENTAS AVANZADAS</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Lleva tu Análisis al Siguiente Nivel</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Nuestras funciones premium ofrecen inteligencia de negocios aplicada a la regulación.</p>
+                </div>
+                <div class="max-w-4xl mx-auto bg-gray-50 p-8 rounded-xl shadow-inner">
+                    <div class="grid md:grid-cols-2 gap-x-8 gap-y-10">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-3xl text-indigo-600 mt-1 flex-shrink-0"><i class="fas fa-chart-line"></i></div>
+                            <div>
+                                <h3 class="text-lg font-bold">Análisis de Frecuencia</h3>
+                                <p class="text-gray-600 mt-1">Descubre tendencias. Analiza cuántas veces se ha mencionado un tema en un periodo específico y detecta picos de actividad regulatoria.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-3xl text-indigo-600 mt-1 flex-shrink-0"><i class="fas fa-search"></i></div>
+                            <div>
+                                <h3 class="text-lg font-bold">Búsqueda en Histórico</h3>
+                                <p class="text-gray-600 mt-1">Investiga a fondo. Realiza búsquedas de cualquier término en toda nuestra base de datos histórica del DOF para encontrar antecedentes.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-3xl text-indigo-600 mt-1 flex-shrink-0"><i class="fas fa-file-signature"></i></div>
+                            <div>
+                                <h3 class="text-lg font-bold">Agente Experto DOF</h3>
+                                <p class="text-gray-600 mt-1">Tu consultor personal. Haz preguntas complejas y recibe un informe con implicaciones, puntos clave y un plan de acción.</p>
+                            </div>
+                        </div>
+                         <div class="flex items-start space-x-4">
+                            <div class="text-3xl text-indigo-600 mt-1 flex-shrink-0"><i class="fas fa-cogs"></i></div>
+                            <div>
+                                <h3 class="text-lg font-bold">Gestión de Alertas Avanzada</h3>
+                                <p class="text-gray-600 mt-1">Monitorea proactivamente. Crea, gestiona y elimina múltiples alertas por palabras clave para una vigilancia regulatoria 360°.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NUEVA SECCIÓN: Testimonios -->
+        <section id="testimonios" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Lo que dicen nuestros usuarios</h2>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <p class="text-gray-600 mb-6">"Esta herramienta me ahorra al menos una hora cada mañana. El resumen diario es increíblemente preciso y relevante. ¡Totalmente recomendado!"</p>
+                        <div class="flex items-center">
+                            <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/100x100/E2E8F0/4A5568?text=LC" alt="Avatar">
+                            <div>
+                                <p class="font-bold">Laura Campos</p>
+                                <p class="text-sm text-gray-500">Abogada Corporativa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <p class="text-gray-600 mb-6">"El Agente Experto es revolucionario. Pude entender las implicaciones de una nueva norma fiscal en minutos, algo que antes me tomaba días de investigación."</p>
+                        <div class="flex items-center">
+                            <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/100x100/E2E8F0/4A5568?text=MR" alt="Avatar">
+                            <div>
+                                <p class="font-bold">Marcos Ríos</p>
+                                <p class="text-sm text-gray-500">Contador Público</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <p class="text-gray-600 mb-6">"Las alertas por palabra clave son mi función favorita. Monitoreo licitaciones y a mi competencia sin esfuerzo. Es una ventaja competitiva enorme."</p>
+                        <div class="flex items-center">
+                            <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/100x100/E2E8F0/4A5568?text=SV" alt="Avatar">
+                            <div>
+                                <p class="font-bold">Sofía Vargas</p>
+                                <p class="text-sm text-gray-500">Directora de Operaciones</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección CTA Mejorada -->
+        <section id="contacto" class="bg-white">
+            <div class="container mx-auto px-6 py-20">
+                <div class="bg-indigo-700 rounded-2xl p-10 md:p-16 flex flex-col lg:flex-row items-center justify-between">
+                    <div class="lg:w-1/2 text-center lg:text-left">
+                        <h2 class="text-3xl font-bold text-white">Transforma tu Cumplimiento Regulatorio Hoy</h2>
+                        <p class="text-indigo-200 mt-4 mb-8">Envía "Hola" a nuestro WhatsApp y recibe tu primer resumen del DOF mañana mismo. Sin compromisos, sin tarjetas de crédito.</p>
+                        <a href="https://wa.me/15550472185/?text=¡Hola! Requiero información" class="bg-white text-indigo-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-100 transition duration-300 inline-block">Iniciar mi Suscripción Gratuita</a>
+                    </div>
+                    <div class="lg:w-1/2 mt-10 lg:mt-0 flex justify-center">
+                        <img src="https://placehold.co/300x600/FFFFFF/3730A3?text=WhatsApp\nDOF\nResumen" alt="Teléfono mostrando la interfaz de WhatsApp" class="rounded-2xl shadow-2xl max-w-xs">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <p>&copy; 2025 Normateca Inteligente. Todos los derechos reservados.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-indigo-400 transition-colors">Política de Privacidad</a>
+                    <a href="#" class="hover:text-indigo-400 transition-colors">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Cierra el menú móvil al hacer clic en un enlace
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+
+</body>
+</html>
