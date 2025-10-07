@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Normateca Inteligente - Monitoreo del DOF con IA por WhatsApp</title>
-    <meta name="description" content="Recibe resúmenes diarios y alertas personalizadas del DOF directamente en tu WhatsApp. Ahorra tiempo y mantente compliant con la regulación mexicana.">
+    <meta name="description" content="Recibe resúmenes diarios, alertas personalizadas y oportunidades de licitación del DOF directamente en tu WhatsApp. Ahorra tiempo y encuentra nuevas oportunidades de negocio.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -46,6 +46,9 @@
         }
         .gradient-bg {
             background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
+        }
+        .opportunity-badge {
+            background: linear-gradient(135deg, #10B981 0%, #059669 100%);
         }
     </style>
     <script>
@@ -90,15 +93,15 @@
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-gray-900 flex items-center">
                 <span class="bg-gradient-to-r from-primary-600 to-primary-700 text-white p-2 rounded-lg mr-2 shadow">
-                    <i class="fas fa-balance-scale"></i>
+                    <i class="fas fa-file-contract"></i>
                 </span>
                 <span class="logo-font text-primary-800">Normateca</span>
                 <span class="font-light text-gray-600">Inteligente</span>
             </a>
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#servicios" class="text-gray-600 hover:text-primary-600 transition duration-300">Servicios</a>
+                <a href="#licitaciones" class="text-gray-600 hover:text-primary-600 transition duration-300">Licitaciones</a>
                 <a href="#como-funciona" class="text-gray-600 hover:text-primary-600 transition duration-300">Cómo Funciona</a>
-                <a href="#ideal-para" class="text-gray-600 hover:text-primary-600 transition duration-300">Ideal Para</a>
                 <a href="#premium" class="text-gray-600 hover:text-primary-600 transition duration-300">Premium</a>
                 <a href="#testimonios" class="text-gray-600 hover:text-primary-600 transition duration-300">Testimonios</a>
                 <a href="#contacto" class="bg-primary-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-primary-700 transition duration-300">Comenzar Ahora</a>
@@ -110,8 +113,8 @@
         <!-- Menú Móvil -->
         <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
             <a href="#servicios" class="block py-3 px-6 text-gray-700 hover:bg-blue-50 border-b">Servicios</a>
+            <a href="#licitaciones" class="block py-3 px-6 text-gray-700 hover:bg-blue-50 border-b">Licitaciones</a>
             <a href="#como-funciona" class="block py-3 px-6 text-gray-700 hover:bg-blue-50 border-b">Cómo Funciona</a>
-            <a href="#ideal-para" class="block py-3 px-6 text-gray-700 hover:bg-blue-50 border-b">Ideal Para</a>
             <a href="#premium" class="block py-3 px-6 text-gray-700 hover:bg-blue-50 border-b">Premium</a>
             <a href="#testimonios" class="block py-3 px-6 text-gray-700 hover:bg-blue-50 border-b">Testimonios</a>
             <a href="#contacto" class="block py-3 px-6 bg-primary-600 text-white font-semibold">Comenzar Ahora</a>
@@ -120,21 +123,21 @@
 
     <!-- Sección Hero -->
     <main>
-        <section class="bg-cover bg-center h-[60vh] md:h-[80vh] relative" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2940&auto=format&fit=crop');">
+        <section class="bg-cover bg-center h-[60vh] md:h-[80vh] relative" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2940&auto=format&fit=crop');">
             <div class="h-full flex items-center">
                 <div class="container mx-auto px-6 text-center text-white">
                     <div class="inline-block bg-primary-500/90 text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-4">
-                        <i class="fas fa-robot mr-1"></i> Impulsado por IA
+                        <i class="fas fa-bolt mr-1"></i> Impulsado por IA + Oportunidades de Negocio
                     </div>
-                    <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight sombra-hero">Deja de buscar en el DOF.<br>Empieza a entenderlo.</h1>
-                    <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto sombra-hero">Recibe resúmenes diarios, alertas personalizadas y análisis con IA sobre las regulaciones que impactan tu negocio. Todo, directamente en tu WhatsApp.</p>
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight sombra-hero">No solo cumplas regulaciones.<br>Encuentra oportunidades.</h1>
+                    <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto sombra-hero">Recibe resúmenes diarios del DOF, alertas personalizadas y notificaciones de licitaciones públicas que pueden hacer crecer tu negocio.</p>
                     
                     <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-10">
                         <a href="#contacto" class="bg-primary-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-primary-700 transition duration-300 transform hover:scale-105 inline-flex items-center float-animation">
-                            <i class="fab fa-whatsapp mr-2 text-xl"></i> Comenzar por WhatsApp
+                            <i class="fab fa-whatsapp mr-2 text-xl"></i> Descubrir Oportunidades
                         </a>
-                        <a href="#servicios" class="text-white font-semibold py-3 inline-flex items-center group">
-                            Ver servicios
+                        <a href="#licitaciones" class="text-white font-semibold py-3 inline-flex items-center group">
+                            Ver licitaciones
                             <i class="fas fa-arrow-down ml-2 group-hover:animate-bounce"></i>
                         </a>
                     </div>
@@ -146,7 +149,7 @@
                         </div>
                         <div class="flex items-center">
                             <i class="fas fa-check-circle text-blue-300 mr-2"></i>
-                            <span class="text-sm">Alertas personalizadas</span>
+                            <span class="text-sm">Alertas de licitaciones</span>
                         </div>
                         <div class="flex items-center">
                             <i class="fas fa-check-circle text-blue-300 mr-2"></i>
@@ -166,8 +169,8 @@
         <section class="py-16 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Nueva plataforma con tecnología avanzada</h2>
-                    <p class="text-gray-600 max-w-2xl mx-auto">Estamos orgullosos de presentar nuestra innovadora solución que transformará tu manera de interactuar con el DOF</p>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Transformamos el DOF en ventajas competitivas</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">No solo te ayudamos a cumplir con la regulación, te ayudamos a encontrar oportunidades de crecimiento</p>
                 </div>
                 
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -178,9 +181,9 @@
                     </div>
                     
                     <div class="p-6 rounded-xl bg-blue-50 border border-blue-100">
-                        <div class="text-4xl text-primary-600 mb-3"><i class="fas fa-shield-alt"></i></div>
-                        <h3 class="font-semibold">Seguridad</h3>
-                        <p class="text-sm text-gray-600 mt-2">Tus datos y consultas protegidas con cifrado de última generación</p>
+                        <div class="text-4xl text-primary-600 mb-3"><i class="fas fa-bullseye"></i></div>
+                        <h3 class="font-semibold">Detección de Oportunidades</h3>
+                        <p class="text-sm text-gray-600 mt-2">Identificamos automáticamente licitaciones relevantes para tu sector</p>
                     </div>
                     
                     <div class="p-6 rounded-xl bg-blue-50 border border-blue-100">
@@ -193,6 +196,181 @@
                         <div class="text-4xl text-primary-600 mb-3"><i class="fas fa-comments"></i></div>
                         <h3 class="font-semibold">WhatsApp</h3>
                         <p class="text-sm text-gray-600 mt-2">Comunicación directa a través de la plataforma que ya usas todos los días</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Servicios -->
+        <section id="servicios" class="py-20 bg-blue-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">La Inteligencia que tu Negocio Necesita</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Desde el monitoreo diario hasta el análisis estratégico, tenemos la herramienta perfecta para cada necesidad regulatoria.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Servicio 1: Resumen Diario -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg feature-card">
+                        <div class="text-4xl text-primary-600 mb-4"><i class="fas fa-newspaper"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Resumen Diario por WhatsApp</h3>
+                        <p class="text-gray-600 mb-4">Olvídate de revisar el Diario Oficial cada mañana. Recibe un resumen claro y conciso con las publicaciones de tus sectores de interés.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
+                                <span>Resumen matutino todas las mañanas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
+                                <span>Solo la información de tus sectores</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Servicio 2: Alertas por Palabra Clave -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg feature-card">
+                        <div class="text-4xl text-primary-600 mb-4"><i class="fas fa-bell"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Alertas Inmediatas</h3>
+                        <p class="text-gray-600 mb-4">Configura palabras clave críticas y recibe una notificación al instante si se publica algo relevante.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
+                                <span>Notificaciones en tiempo real</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
+                                <span>Hasta 10 palabras clave por alerta</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Servicio 3: Agente Experto IA -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg feature-card">
+                        <div class="text-4xl text-primary-600 mb-4"><i class="fas fa-robot"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Agente Experto IA</h3>
+                        <p class="text-gray-600 mb-4">¿Necesitas entender cómo te afecta una nueva ley? Pregúntale a nuestro agente y recibe un análisis detallado.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
+                                <span>Análisis de documentos complejos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
+                                <span>Recomendaciones de acción</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Servicio 4: Licitaciones -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg feature-card border-2 border-green-200 relative">
+                        <div class="absolute -top-3 -right-3 opportunity-badge text-white text-xs font-bold px-3 py-1 rounded-full">
+                            NUEVO
+                        </div>
+                        <div class="text-4xl text-green-600 mb-4"><i class="fas fa-handshake"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Oportunidades de Licitación</h3>
+                        <p class="text-gray-600 mb-4">Recibe notificaciones de procesos de licitación pública que coincidan con tu perfil de negocio.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Alertas de licitaciones relevantes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Filtrado por dependencia y por bien o servicio</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-16">
+                    <a href="#contacto" class="bg-primary-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-primary-700 transition duration-300 inline-flex items-center">
+                        <i class="fas fa-crown mr-2"></i> Ver planes premium
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nueva Sección: Oportunidades de Licitación -->
+        <section id="licitaciones" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-green-600 font-semibold tracking-wider">OPORTUNIDADES DE NEGOCIO</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Convierte el DOF en Oportunidades de Crecimiento</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">No solo te mantenemos compliant, te ayudamos a encontrar nuevos negocios a través de las licitaciones públicas</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Encuentra licitaciones que otros pierden</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4 flex-shrink-0">
+                                    <i class="fas fa-filter text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">Filtrado Inteligente</h4>
+                                    <p class="text-gray-600">Configura tu perfil de negocio y recibe solo las licitaciones que realmente te interesan, filtradas por sector, bien o servicio.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4 flex-shrink-0">
+                                    <i class="fas fa-bolt text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">Alertas Inmediatas</h4>
+                                    <p class="text-gray-600">Tan pronto como se publique una licitación que coincida con tus criterios, recibirás una notificación directa en tu WhatsApp.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-line text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">Ligas directas a las publicaciones</h4>
+                                    <p class="text-gray-600">Nuestra herramienta te proporciona la liga hacia información clave como plazos, requisitos y fechas importantes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <a href="https://wa.me/15550472185/?text=¡Hola! Quiero información sobre las alertas de licitaciones" class="bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-green-700 transition duration-300 inline-flex items-center">
+                                <i class="fas fa-handshake mr-2"></i> Activar Alertas de Licitaciones
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-2xl shadow-lg border border-green-200">
+                        <h3 class="text-xl font-bold mb-6 text-center">Ejemplo de Alerta de Licitación</h3>
+                        <div class="bg-white p-6 rounded-xl shadow border-l-4 border-green-500">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <span class="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded">Equipo de Computo</span>
+                                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded ml-2"></span>
+                                </div>
+                                <span class="text-xs text-gray-500"></span>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">REF:568693</h4>
+                            <p class="text-gray-600 text-sm mb-4">INSTITUTO MEXICANO DEL SEGURO SOCIAL</p>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <div>
+                                    <i class="fas fa-calendar-alt mr-1"></i>
+                                    <span></span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-map-marker-alt mr-1"></i>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-gray-200">
+                                <a href="#" class="text-primary-600 hover:text-primary-700 text-sm font-medium inline-flex items-center">
+                                    Ver detalles completos
+                                    <i class="fas fa-arrow-right ml-1 text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 text-center">
+                            <p class="text-sm text-gray-600">Así recibirás las oportunidades directamente en tu WhatsApp</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -215,14 +393,14 @@
                     
                     <div class="text-center">
                         <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center text-primary-600 text-2xl font-bold mx-auto mb-6">2</div>
-                        <h3 class="text-xl font-bold mb-3">Personaliza tu perfil</h3>
-                        <p class="text-gray-600">Selecciona tus sectores de interés y configura las palabras clave para tus alertas personalizadas.</p>
+                        <h3 class="text-xl font-bold mb-3">Configura tu perfil</h3>
+                        <p class="text-gray-600">Selecciona tus sectores de interés, palabras clave y criterios para licitaciones.</p>
                     </div>
                     
                     <div class="text-center">
                         <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center text-primary-600 text-2xl font-bold mx-auto mb-6">3</div>
-                        <h3 class="text-xl font-bold mb-3">Recibe información relevante</h3>
-                        <p class="text-gray-600">Comienza a recibir resúmenes diarios y alertas instantáneas con lo que realmente te importa.</p>
+                        <h3 class="text-xl font-bold mb-3">Recibe oportunidades</h3>
+                        <p class="text-gray-600">Comienza a recibir resúmenes diarios, alertas regulatorias y oportunidades de licitación.</p>
                     </div>
                 </div>
                 
@@ -233,119 +411,41 @@
                 </div>
             </div>
         </section>
-
-        <!-- Sección de Servicios -->
-        <section id="servicios" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">La Inteligencia que tu Negocio Necesita</h2>
-                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Desde el monitoreo diario hasta el análisis estratégico, tenemos la herramienta perfecta para cada necesidad regulatoria.</p>
-                </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Servicio 1: Resumen Diario -->
-                    <div class="bg-blue-50 p-8 rounded-xl shadow-lg feature-card">
-                        <div class="text-4xl text-primary-600 mb-4"><i class="fas fa-newspaper"></i></div>
-                        <h3 class="text-xl font-bold mb-2">Resumen Diario por WhatsApp</h3>
-                        <p class="text-gray-600 mb-4">Olvídate de revisar el Diario Oficial cada mañana. Recibe un resumen claro y conciso con las publicaciones de tus sectores de interés directamente en tu celular.</p>
-                        <ul class="text-sm text-gray-500 space-y-1">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
-                                <span>Resumen matutino todas las mañanas</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
-                                <span>Solo la información de tus sectores</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
-                                <span>Enlaces directos a los documentos</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Servicio 2: Alertas por Palabra Clave -->
-                    <div class="bg-blue-50 p-8 rounded-xl shadow-lg feature-card">
-                        <div class="text-4xl text-primary-600 mb-4"><i class="fas fa-bell"></i></div>
-                        <h3 class="text-xl font-bold mb-2">Alertas Inmediatas</h3>
-                        <p class="text-gray-600 mb-4">Configura palabras clave críticas (ej. "licitación", una NOM específica) y recibe una notificación al instante si se publica algo relevante.</p>
-                        <ul class="text-sm text-gray-500 space-y-1">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
-                                <span>Notificaciones en tiempo real</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
-                                <span>Hasta 10 palabras clave por alerta</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
-                                <span>Múltiples alertas configurables</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Servicio 3: Agente Experto IA -->
-                    <div class="bg-blue-50 p-8 rounded-xl shadow-lg feature-card">
-                        <div class="text-4xl text-primary-600 mb-4"><i class="fas fa-robot"></i></div>
-                        <h3 class="text-xl font-bold mb-2">Agente Experto IA</h3>
-                        <p class="text-gray-600 mb-4">¿Necesitas entender cómo te afecta una nueva ley? Pregúntale a nuestro agente. Analizará los documentos y te entregará un informe con implicaciones y pasos a seguir.</p>
-                        <ul class="text-sm text-gray-500 space-y-1">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
-                                <span>Análisis de documentos complejos</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
-                                <span>Informes con implicaciones prácticas</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
-                                <span>Recomendaciones de acción</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="text-center mt-16">
-                    <a href="#contacto" class="bg-primary-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-primary-700 transition duration-300 inline-flex items-center">
-                        <i class="fas fa-crown mr-2"></i> Ver planes premium
-                    </a>
-                </div>
-            </div>
-        </section>
         
         <!-- NUEVA SECCIÓN: Ideal Para... -->
-        <section id="ideal-para" class="py-20 bg-blue-50">
+        <section id="ideal-para" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Ideal para Profesionales y Empresas</h2>
                     <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Si el cumplimiento normativo es clave en tu día a día, esta herramienta es para ti.</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                    <div class="fade-in p-6 rounded-xl bg-white hover:bg-blue-50 transition-colors">
+                    <div class="fade-in p-6 rounded-xl bg-blue-50 hover:bg-blue-100 transition-colors">
                         <div class="bg-primary-100 p-6 rounded-full shadow-md inline-block mb-4"><i class="fas fa-gavel text-3xl text-primary-600"></i></div>
                         <h3 class="font-bold text-lg mb-2">Abogados y Despachos</h3>
                         <p class="text-sm text-gray-600">Mantente actualizado sobre cambios legales sin perder horas de investigación.</p>
                     </div>
-                    <div class="fade-in p-6 rounded-xl bg-white hover:bg-blue-50 transition-colors" style="animation-delay: 0.2s;">
+                    <div class="fade-in p-6 rounded-xl bg-blue-50 hover:bg-blue-100 transition-colors" style="animation-delay: 0.2s;">
                         <div class="bg-primary-100 p-6 rounded-full shadow-md inline-block mb-4"><i class="fas fa-calculator text-3xl text-primary-600"></i></div>
                         <h3 class="font-bold text-lg mb-2">Contadores y Fiscalistas</h3>
                         <p class="text-sm text-gray-600">Detecta cambios fiscales y contables relevantes para tus clientes al instante.</p>
                     </div>
-                    <div class="fade-in p-6 rounded-xl bg-white hover:bg-blue-50 transition-colors" style="animation-delay: 0.4s;">
+                    <div class="fade-in p-6 rounded-xl bg-blue-50 hover:bg-blue-100 transition-colors" style="animation-delay: 0.4s;">
                         <div class="bg-primary-100 p-6 rounded-full shadow-md inline-block mb-4"><i class="fas fa-clipboard-check text-3xl text-primary-600"></i></div>
                         <h3 class="font-bold text-lg mb-2">Oficiales de Cumplimiento</h3>
                         <p class="text-sm text-gray-600">Automatiza el monitoreo regulatorio y enfócate en la implementación.</p>
                     </div>
-                    <div class="fade-in p-6 rounded-xl bg-white hover:bg-blue-50 transition-colors" style="animation-delay: 0.6s;">
-                        <div class="bg-primary-100 p-6 rounded-full shadow-md inline-block mb-4"><i class="fas fa-building text-3xl text-primary-600"></i></div>
-                        <h3 class="font-bold text-lg mb-2">Empresarios y Directivos</h3>
-                        <p class="text-sm text-gray-600">Toma decisiones informadas con información regulatoria procesada y relevante.</p>
+                    <div class="fade-in p-6 rounded-xl bg-green-50 hover:bg-green-100 transition-colors" style="animation-delay: 0.6s;">
+                        <div class="bg-green-100 p-6 rounded-full shadow-md inline-block mb-4"><i class="fas fa-handshake text-3xl text-green-600"></i></div>
+                        <h3 class="font-bold text-lg mb-2">Empresas con Gobierno</h3>
+                        <p class="text-sm text-gray-600">Encuentra oportunidades de licitación antes que tu competencia.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Sección Funciones Premium -->
-        <section id="premium" class="py-20 bg-white">
+        <section id="premium" class="py-20 bg-blue-50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
                     <span class="text-primary-600 font-semibold tracking-wider">HERRAMIENTAS AVANZADAS</span>
@@ -376,7 +476,11 @@
                                     </li>
                                     <li class="flex items-start">
                                         <i class="fas fa-check-circle mt-1 mr-3"></i>
-                                        <span>Acceso al Agente Experto IA (10 consultas/mes)</span>
+                                        <span>Acceso al Agente Experto IA (15 consultas/mes)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle mt-1 mr-3"></i>
+                                        <span>Alertas de licitaciones ilimitadas</span>
                                     </li>
                                     <li class="flex items-start">
                                         <i class="fas fa-check-circle mt-1 mr-3"></i>
@@ -396,6 +500,14 @@
                             <div class="p-10">
                                 <div class="space-y-8">
                                     <div class="flex items-start">
+                                        <div class="text-2xl text-primary-600 mt-1 flex-shrink-0 mr-4"><i class="fas fa-handshake"></i></div>
+                                        <div>
+                                            <h3 class="text-lg font-bold mb-2">Alertas de Licitaciones Avanzadas</h3>
+                                            <p class="text-gray-600">Configura múltiples perfiles de licitación, recibe análisis de viabilidad y comparativas con oportunidades anteriores.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start">
                                         <div class="text-2xl text-primary-600 mt-1 flex-shrink-0 mr-4"><i class="fas fa-chart-line"></i></div>
                                         <div>
                                             <h3 class="text-lg font-bold mb-2">Análisis de Frecuencia</h3>
@@ -408,14 +520,6 @@
                                         <div>
                                             <h3 class="text-lg font-bold mb-2">Búsqueda en Histórico</h3>
                                             <p class="text-gray-600">Investiga a fondo. Realiza búsquedas de cualquier término en toda nuestra base de datos histórica del DOF para encontrar antecedentes.</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="flex items-start">
-                                        <div class="text-2xl text-primary-600 mt-1 flex-shrink-0 mr-4"><i class="fas fa-file-signature"></i></div>
-                                        <div>
-                                            <h3 class="text-lg font-bold mb-2">Agente Experto DOF</h3>
-                                            <p class="text-gray-600">Tu consultor personal. Haz preguntas complejas y recibe un informe con implicaciones, puntos clave y un plan de acción.</p>
                                         </div>
                                     </div>
                                     
@@ -439,14 +543,14 @@
         </section>
 
         <!-- NUEVA SECCIÓN: Testimonios -->
-        <section id="testimonios" class="py-20 bg-blue-50">
+        <section id="testimonios" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Lo que dicen nuestros usuarios</h2>
                     <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Profesionales que han transformado su manera de mantenerse al día con la regulación</p>
                 </div>
                 <div class="grid lg:grid-cols-3 gap-8">
-                    <div class="bg-white p-8 rounded-xl shadow-lg border border-blue-100">
+                    <div class="bg-blue-50 p-8 rounded-xl shadow-lg border border-blue-100">
                         <div class="flex items-center mb-4">
                             <div class="flex items-center">
                                 <i class="fas fa-star text-yellow-400"></i>
@@ -465,7 +569,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white p-8 rounded-xl shadow-lg border border-blue-100">
+                    <div class="bg-blue-50 p-8 rounded-xl shadow-lg border border-blue-100">
                         <div class="flex items-center mb-4">
                             <div class="flex items-center">
                                 <i class="fas fa-star text-yellow-400"></i>
@@ -484,7 +588,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white p-8 rounded-xl shadow-lg border border-blue-100">
+                    <div class="bg-green-50 p-8 rounded-xl shadow-lg border border-green-100">
                         <div class="flex items-center mb-4">
                             <div class="flex items-center">
                                 <i class="fas fa-star text-yellow-400"></i>
@@ -494,12 +598,12 @@
                                 <i class="fas fa-star text-yellow-400"></i>
                             </div>
                         </div>
-                        <p class="text-gray-600 mb-6">"Las alertas por palabra clave son mi función favorita. Monitoreo licitaciones y a mi competencia sin esfuerzo. Es una ventaja competitiva enorme."</p>
+                        <p class="text-gray-600 mb-6">"Gracias a las alertas de licitaciones, mi empresa ganó un contrato de $2.5M que ni siquiera sabíamos que existía. Esta herramienta paga por sí misma."</p>
                         <div class="flex items-center">
-                            <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center text-primary-700 font-bold mr-4">SV</div>
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-700 font-bold mr-4">RG</div>
                             <div>
-                                <p class="font-bold">Sofía Vargas</p>
-                                <p class="text-sm text-gray-500">Directora de Operaciones</p>
+                                <p class="font-bold">Ricardo González</p>
+                                <p class="text-sm text-gray-500">Director de Empresa Constructora</p>
                             </div>
                         </div>
                     </div>
@@ -514,7 +618,7 @@
         </section>
 
         <!-- Sección FAQ -->
-        <section class="py-20 bg-white">
+        <section class="py-20 bg-blue-50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Preguntas Frecuentes</h2>
@@ -522,22 +626,22 @@
                 </div>
                 
                 <div class="max-w-3xl mx-auto space-y-6">
-                    <div class="bg-blue-50 p-6 rounded-xl shadow border border-blue-100">
+                    <div class="bg-white p-6 rounded-xl shadow border border-blue-100">
                         <h3 class="font-bold text-lg mb-2">¿Cómo me registro en el servicio?</h3>
                         <p class="text-gray-600">Simplemente envía un mensaje de WhatsApp con la palabra "Hola" a nuestro número y nuestro asistente te guiará a través del proceso de registro, que toma menos de 2 minutos.</p>
                     </div>
                     
-                    <div class="bg-blue-50 p-6 rounded-xl shadow border border-blue-100">
+                    <div class="bg-white p-6 rounded-xl shadow border border-blue-100">
                         <h3 class="font-bold text-lg mb-2">¿Qué costo tiene el servicio?</h3>
-                        <p class="text-gray-600">Ofrecemos un plan básico gratuito với funcionalidades limitadas y un plan premium completo por $499/mes. Todos los planes incluyen una prueba gratuita de 7 días.</p>
+                        <p class="text-gray-600">Ofrecemos un plan básico gratuito con funcionalidades limitadas y un plan premium completo por $499/mes. Todos los planes incluyen una prueba gratuita de 7 días.</p>
                     </div>
                     
-                    <div class="bg-blue-50 p-6 rounded-xl shadow border border-blue-100">
-                        <h3 class="font-bold text-lg mb-2">¿Cómo dejo de recibir mensajes?</h3>
-                        <p class="text-gray-600">Puedes cancelar en cualquier momento enviando la palabra "Detener" por WhatsApp. No hay contratos de permanencia ni cargos por cancelación.</p>
+                    <div class="bg-white p-6 rounded-xl shadow border border-blue-100">
+                        <h3 class="font-bold text-lg mb-2">¿Cómo funcionan las alertas de licitaciones?</h3>
+                        <p class="text-gray-600">Configuras tu perfil de negocio (sector, montos de interés, ubicación) y nuestro sistema te notificará automáticamente cuando se publiquen licitaciones que coincidan con tus criterios.</p>
                     </div>
                     
-                    <div class="bg-blue-50 p-6 rounded-xl shadow border border-blue-100">
+                    <div class="bg-white p-6 rounded-xl shadow border border-blue-100">
                         <h3 class="font-bold text-lg mb-2">¿Es seguro compartir mi información?</h3>
                         <p class="text-gray-600">Sí, utilizamos cifrado end-to-end para todos los mensajes y cumplimos con las regulaciones de protección de datos. Nunca compartimos tu información con terceros.</p>
                     </div>
@@ -565,7 +669,7 @@
                         <p class="text-blue-200 text-sm mt-6"><i class="fas fa-shield-alt mr-2"></i> Prueba gratuita de 7 días. Cancela cuando quieras.</p>
                     </div>
                     <div class="lg:w-1/2 flex justify-center">
-                        <img src="https://placehold.co/300x600/FFFFFF/1E3A8A?text=WhatsApp\nDOF\nResumen" alt="Teléfono mostrando la interfaz de WhatsApp" class="rounded-2xl shadow-2xl max-w-xs float-animation">
+                        <img src="https://placehold.co/300x600/FFFFFF/1E3A8A?text=WhatsApp\nDOF\nResumen\n+\nLicitaciones" alt="Teléfono mostrando la interfaz de WhatsApp" class="rounded-2xl shadow-2xl max-w-xs float-animation">
                     </div>
                 </div>
             </div>
@@ -579,7 +683,7 @@
                 <div>
                     <a href="#" class="text-2xl font-bold text-white flex items-center mb-6">
                         <span class="bg-gradient-to-r from-primary-600 to-primary-700 text-white p-2 rounded-lg mr-2 shadow">
-                            <i class="fas fa-balance-scale"></i>
+                            <i class="fas fa-file-contract"></i>
                         </span>
                         <span class="logo-font text-white">Normateca</span>
                         <span class="font-light text-gray-400">Inteligente</span>
@@ -599,7 +703,7 @@
                         <li><a href="#servicios" class="text-gray-400 hover:text-white transition">Resumen Diario</a></li>
                         <li><a href="#servicios" class="text-gray-400 hover:text-white transition">Alertas Inmediatas</a></li>
                         <li><a href="#servicios" class="text-gray-400 hover:text-white transition">Agente Experto IA</a></li>
-                        <li><a href="#premium" class="text-gray-400 hover:text-white transition">Plan Premium</a></li>
+                        <li><a href="#licitaciones" class="text-gray-400 hover:text-white transition">Oportunidades de Licitación</a></li>
                     </ul>
                 </div>
                 
